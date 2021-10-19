@@ -37,6 +37,29 @@
     </header>
     <!-- Termina seccion del header -->
 
+<!-- Formulario para agregar ingresos y egresos -->
+
+<form id="forma" onsubmit="return false;">
+  <div class="agregar">
+    <div class="agregar_contenedor">
+      <select class="agregar_tipo" id="tipo">
+        <option value="ingreso" selected>+</option>
+        <option value="egreso" >-</option>
+        <input type="text" class="agregar_descripcion"
+        placeholder= "Agregar descripcion" id="descripcion"/>
+
+        <input type =number class="agregar_valor"
+        placeholder="Cantidad" id="valor" step="any"/>
+        <button class="agregar_btn" onclick="agregarDato()" >
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+        </button>
+      </select>
+    </div>
+  </div>
+
+</form>
+
+
     <!-- Seccion de ingresos -->
     <div class="contenedor limpiarEstilos">
       <div class="ingreso">
@@ -77,14 +100,12 @@
             <div class="elemento_descripcion">Renta casa</div>
             <div class="derecha limpiarEstilos">
               <div class="elemento_valor">- 900.00</div>
-              <div class="elemento_porcentaje"> 21%</div>
+              <div class="elemento_porcentaje">21%</div>
               <div class="elemento_eliminar">
                 <button class="elemento_eliminar--btn">
                   <ion-icon name="trash-outline"></ion-icon>
-
                 </button>
               </div>
-
             </div>
           </div>
 
@@ -92,14 +113,12 @@
             <div class="elemento_descripcion">Ropa</div>
             <div class="derecha limpiarEstilos">
               <div class="elemento_valor">- 700.00</div>
-              <div class="elemento_porcentaje"> 10%</div>
+              <div class="elemento_porcentaje">10%</div>
               <div class="elemento_eliminar">
                 <button class="elemento_eliminar--btn">
                   <ion-icon name="trash-outline"></ion-icon>
-
                 </button>
               </div>
-
             </div>
           </div>
         </div>
