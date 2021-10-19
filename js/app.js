@@ -1,14 +1,6 @@
-const ingresos = [
-  new Ingresos("Sueldo", 3000.0),
-  new Ingresos("Venta", 3000.0),
-  new Ingresos("Salario", 3000.0),
-];
+const ingresos = [];
 
-const egresos = [
-  new Egresos("Renta", 600.0),
-  new Egresos("Renta", 600.0),
-  new Egresos("Renta", 600.0),
-];
+const egresos = [];
 
 let cargarApp = () => {
   cargarCabecero();
